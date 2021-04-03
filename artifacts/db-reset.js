@@ -61,11 +61,11 @@ MongoClient.connect(db, (err, db) =>  {
     console.log("Connected to the database: " + db);
 
     // remove existing data (if any), we don't want to look for errors here
-    db.dropCollection("users");
-    db.dropCollection("allocations");
-    db.dropCollection("contributions");
-    db.dropCollection("memos");
-    db.dropCollection("counters");
+    // db.dropCollection("users");
+    // db.dropCollection("allocations");
+    // db.dropCollection("contributions");
+    // db.dropCollection("memos");
+    // db.dropCollection("counters");
 
     const usersCol = db.collection("users");
     const allocationsCol = db.collection("allocations");
